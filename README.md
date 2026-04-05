@@ -22,7 +22,7 @@ A fully functional product inventory dashboard built with ReactJS and Supabase. 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/notorioustomijo/longrun-fullstack-task
 cd shelfie
 
 # Install dependencies
