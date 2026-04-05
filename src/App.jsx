@@ -5,17 +5,27 @@ import Sidebar from './components/Sidebar';
 function App() {
 
   return (
-    <main className="
+    <div className="
       flex
-      gap-12
-      h-full
+      h-screen
       bg-[#F9FBFE]
+      gap-12
     ">
       <Sidebar />
-      <Routes>
-        <Route path="/" element={<Inventory />} />
-      </Routes>
-    </main>
+      <main className="
+        flex-1
+        ml-[8.5rem]
+        mr-[2rem]
+        md:ml-[18rem]
+        md:mr-[4rem]
+        h-screen
+        overflow-y-auto
+      ">
+        <Routes>
+          <Route path="/" element={<Inventory />} />
+        </Routes>
+      </main>
+    </div>
   )
 }
 

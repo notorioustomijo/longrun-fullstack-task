@@ -16,6 +16,9 @@ export default function Sidebar() {
         <>
             {/* Mobile nav, >=768px */}
             <nav className="
+                fixed
+                top-0
+                left-0
                 w-[6.75rem]
                 h-[100vh]
                 flex
@@ -27,6 +30,7 @@ export default function Sidebar() {
                 shadow-[0_2px_14px_rgba(0,0,0,0.04)]
                 border-b
                 border-[#F3F8FD]
+                z-40
             ">
                 <div className="
                     flex
@@ -61,15 +65,19 @@ export default function Sidebar() {
 
             {/* Tab - Desktop Breakpoint (>= 768px) */}
             <nav className="
+                fixed
+                top-0
+                left-0
                 hidden
                 md:flex
                 w-[15rem]
-                h-[100vh]
+                h-[100%]
                 flex-col
                 items-center
                 gap-8
                 bg-white
                 shadow-[0_2px_14px_rgba(0,0,0,0.04)]
+                z-40
             ">
                 <div className="
                     flex
